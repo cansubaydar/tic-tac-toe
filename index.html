@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Press+Start+2P&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/hash-straight-bold.svg" id="favicon" type="image/svg"> 
+  <!-- "https://phosphoricons.com/" -->
+</head>
+<body>
+  <header>
+    <h1>Tic Tac Toe</h1>
+  </header>
+  <main>
+    <form class="player-form">
+      <h2>Human vs AI</h2>
+      <div class="form-group">
+        <label for="player-name">Name:</label>
+        <input type="text" name="player-name" id="player-name" placeholder="Player name" required>
+      </div>
+      <div class="form-group">
+        <p>Choose a mark:</p>
+        <div class="mark-buttons">
+          <input type="radio" name="marker" id="X" value="X" checked>
+          <label for="X">X</label>
+          <input type="radio" name="marker" id="O" value="O">
+          <label for="O">O</label>
+        </div>
+      </div>
+      <button id="start-button">Start Game</button>
+    </form>
+    <div class="game-container">
+      <div class="game-board">
+        <div class="cell" data-cell-index="0"></div>
+        <div class="cell" data-cell-index="1"></div>
+        <div class="cell" data-cell-index="2"></div>
+        <div class="cell" data-cell-index="3"></div>
+        <div class="cell" data-cell-index="4"></div>
+        <div class="cell" data-cell-index="5"></div>
+        <div class="cell" data-cell-index="6"></div>
+        <div class="cell" data-cell-index="7"></div>
+        <div class="cell" data-cell-index="8"></div>
+      </div>
+      <div class="status-text"></div>
+      <button id="restart-button">Restart Game</button>
+    </div>
+  </main>
+  <footer>&#169; <span id="year"></span> <a href="https://github.com/cansubaydar" target="_blank">cansubaydar<img src="assets/github-logo-bold.svg" alt="github"></a></footer>
+  <script src="script.js"></script> 
+</body>
+</html>
